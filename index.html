@@ -1,41 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Trouve ton DAB</title>
-	<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/> -->
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Trouve ton DAB</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin=""/> 
+		<meta name="viewport" content="width=device-width, user-scalable=yes">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
 
-	<img class="logo" src="images/logo.png">
-	<h1 class="txthome"> Cette application utilise l'API <br/>
-						Leaflet qui permet d'afficher une map</h1>
-	<button type="button"> Passer </button>
-	<div id="map"></div>
-	<div id="InfoMarker">
-		<h3>Caisse d'Epargne</h3>
-		<button type="button"> Itinéraire</button>
-		<p>
-			Banque <br/>
-			80 Avenue Jean Jaurès - 170 m <br/>
-			Ouvert - ferme à 18:45 <br/>
-		</p>
-	</div>
-<footer id="pagebottom">
-	mentions légales
-	<i>
-		Remerciements au site 
-		<a href="https://leafletjs.com">leaflet</a>
-		pour la map
-	</i>
-</footer>
-<!-- <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script> -->
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+		<img class="logo" src="images/logo.png" alt="">
+		<h1 class="txthome">
+			Cette application affiche<br/>
+			les distribureurs automatique<br/>
+			de billets elle utilise l'API<br/>
+			Leaflet
+		</h1>
+		<button type="button"> Passer </button>
+		<div class="affichage">
+			<div id="map"></div>
+			<div id="InfoMarker">
+				<h3>Caisse d'Epargne</h3>
+				<button type="button"> Itinéraire</button>
+				<p>
+					Banque <br/>
+					80 Avenue Jean Jaurès - 170 m <br/>
+					Ouvert - ferme à 18:45 <br/>
+				</p>
+			</div>
+		</div>
+		<footer id="pagebottom">
+			mentions légales
+			<i>
+				Remerciements au site 
+				<a href="https://leafletjs.com">leaflet</a>
+				pour la map
+			</i>
+		</footer>
+		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+		integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+		crossorigin=""></script> 
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
