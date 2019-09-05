@@ -1,0 +1,65 @@
+body{
+    background-color: #342C2C;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    margin-top: 30%;
+}
+
+h1{
+    color: white;
+    text-align: center
+}
+
+button {
+    display: block;
+	border-radius:20px 20px 20px 20px;
+	background: #2A87BD;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#map{
+    width: 100vx;
+	height: 100vh;
+    background-color: red;
+}
+#InfoMarker{
+    display: grid;
+    background-color: #7D7676;
+}
+#InfoMarker>h3{
+    grid-column: 1 / 2;
+}
+#InfoMarker>button{
+    grid-column: 2;
+    background: #2A87BD;
+    width: auto;
+}
+#pagebottom{
+    background-color: yellow;
+    text-align: center;
+}
+
+@media screen and(min-width: 400px) and (max-width: 1025px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 
+    }
+    #map{
+        grid-column: span 3; 
+    }
+    #InfoMarker{
+        grid-column: 1 / 2;
+    }
+}
+
